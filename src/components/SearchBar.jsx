@@ -11,18 +11,18 @@ const SearchBar = ({ onSearch }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="mb-6">
-      <div className="flex">
+    <form onSubmit={handleSubmit} className="mb-6 w-full">
+      <div className="flex w-full max-w-md md:max-w-lg lg:max-w-2xl mx-auto gap-2">
         <input
           type="text"
           value={query}
           onChange={(e) => setQuery(e.target.value)}
           placeholder="Search for movies..."
-          className="flex-grow px-4 py-2 rounded-md focus:outline-none text-black"
+          className="flex-grow px-3 py-2 sm:px-4 sm:py-3 rounded-md focus:outline-none text-black text-sm sm:text-base md:text-lg"
         />
         <button
           type="submit"
-          className="bg-blue-500 hover:bg-blue-600 text-white px-6 py-2 rounded-md transition duration-200 mx-1"
+          className="bg-blue-500 hover:bg-blue-600 text-white px-3 sm:px-5 py-2 sm:py-3 rounded-md transition duration-200 text-sm sm:text-base md:text-lg"
         >
           Search
         </button>

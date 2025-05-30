@@ -34,3 +34,5 @@
 
 5. Start the development server:
    npm run dev
+
+👉 [Live link](https://suryasmoviesearchapp.netlify.app)
